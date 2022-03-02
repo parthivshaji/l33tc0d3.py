@@ -2,7 +2,7 @@ def findMin(nums):
     res = nums[0]
     left = 0
     right = len(nums)-1
-    
+    # binary search
     while left<=right:
         if nums[left] < nums[right]:
             res = min(res,nums[left])
